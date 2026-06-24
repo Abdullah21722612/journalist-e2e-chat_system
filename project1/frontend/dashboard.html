@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App - Dashboard</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Chat App</h2>
+                <button class="btn-logout" onclick="logout()">Logout</button>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>My Friends</h3>
+                <ul id="friendsList" class="friends-list">
+                    <!-- Friends will be added here dynamically -->
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="content-header">
+                <h2>Add Friends & Start Chatting</h2>
+            </div>
+            
+            <div class="search-section">
+                <input type="text" id="searchUser" placeholder="Search users..." class="search-input">
+                <button class="btn btn-primary" onclick="searchUsers()">Search</button>
+            </div>
+            
+            <!-- Users List -->
+            <div class="users-section">
+                <h3>All Users</h3>
+                <div id="usersList" class="users-grid">
+                    <!-- Users will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html> 

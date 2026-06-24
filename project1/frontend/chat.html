@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App - Chat</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <h2 id="chatWith">Chat Room</h2>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn-back" onclick="goToDashboard()">← Back</button>
+            </div>
+        </div>
+        
+        <!-- Messages Area -->
+        <div id="messagesArea" class="messages-area">
+            <!-- Messages will be displayed here -->
+        </div>
+        
+        <!-- Message Input -->
+        <div class="message-input-section">
+            <input type="text" id="messageInput" placeholder="Type your message..." class="message-input">
+            <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+        </div>
+        
+        <!-- Features Section -->
+        <div class="features-section">
+            <button class="btn btn-secondary" onclick="uploadImage()">📷 Send Image</button>
+            <button class="btn btn-secondary" onclick="toggleAnonymous()">🔒 Anonymous</button>
+        </div>
+    </div>
+    
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/chat_new.js"></script>
+</body>
+</html> 
